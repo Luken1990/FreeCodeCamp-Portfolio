@@ -173,6 +173,11 @@ h1{
 	border: 0.0625rem solid #fff;
 }
 
+
+#particles-js{
+	height:100vh;
+}
+
 /*
 _____________________
 *MAIN QUERIES* 
@@ -455,6 +460,7 @@ _____________________
 	align-items: center;
 	justify-content: center;
 	flex-direction: row;
+	padding:1.25rem 0;
 }
 
 .form-control{
