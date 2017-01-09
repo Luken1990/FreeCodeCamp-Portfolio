@@ -5,6 +5,10 @@ $('.map-wrapper')
 			$(this).find('iframe').removeClass('clicked')
 });
 
+
+particlesJS();
+
+
 /*
 
 $(window).scroll(function(){
