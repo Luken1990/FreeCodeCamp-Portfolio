@@ -1,3 +1,5 @@
+//Google map 
+
 $('.map-wrapper')
 	.click(function(){
 			$(this).find('iframe').addClass('clicked')})
@@ -5,6 +7,7 @@ $('.map-wrapper')
 			$(this).find('iframe').removeClass('clicked')
 });
 
+//Home page particles
 
 particlesJS({
   "particles": {
@@ -117,16 +120,36 @@ particlesJS({
   "retina_detect": true
 });
 
+//Window Scroll in Animation
 
+/*function debounce(func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+};*/
 
-/*
-$(window).scroll(function(){
-	var wScroll = $(window).scrollTop();
-	var position = $(".web-description").offset().top;
-	
-	if (wScroll <= 1400){
-		$(".web-description").addClass("animated fadeInLeft");
+/*window.addEventListener("scroll", debounce(checkSlide, 20));
+var slideInText = document.querySelectorAll(".web-description");
+
+function checkSlide(e){
+	for(i = 0; i <= slideInText.length ; i++){
+		var slideInAt = (window.scrollY + window.innerHeight);
+		console.log(slideInAt);
+		if (slideInAt === 2100){
+			slideInText.classList.add("active-slider");
+		}
 	}
-});	
-*/
+}*/
+
+
+
 
