@@ -3,7 +3,7 @@
 
 <html>
 <head>
-	<title>My Portfolio</title>
+	<title>Luke Nguyen</title>
   <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,8 +16,7 @@
 <!--		Custom stylesheet		-->
   <link rel="stylesheet" href="CSS/style.css" type="text/css"/>
 <!--		Google fonts		-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800|Open+Sans" rel="stylesheet">
+ 	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 <!--		fontawesome		-->  
   <script src="https://use.fontawesome.com/f942eb65d9.js"></script>
@@ -50,8 +49,16 @@
 
   <main id="home">
   	<div id="particles-js" class="container-fluid">
-				<h1>Welcome</h1>
-				
+  		<div class="text-wrapper">
+				<h1 class="animated fadeInDown">Luke Nguyen</h1>
+				<p>Graphic Designer / Front-End Developer</p>
+			</div>
+			<a class="viewWork-btn"  href="#portfolio">
+				<p>View my work</p>
+			</a>
+			<div class="pointer ">
+				<i class="fa fa-angle-double-down fa-3x animated bounce"></i>
+			</div>
   	</div> <!--container-->
   </main>
 
@@ -60,8 +67,12 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="profile-wrapper">
-							<img src="IMG/profile.jpg" alt="profile photo" class="img-responsive">
-						<div class="timeline-line"></div>
+						<img src="IMG/profile.jpg" alt="profile photo" class="img-responsive">
+<!--
+						<div class="cvBtn-wrapper">
+							<p>CV</p>
+						</div>
+-->
 					</div>  <!--profile-wrapper-->
 				</div>  <!--col-md-4-->
 				
@@ -138,7 +149,7 @@
 										<div class="checked"></div>
 										<div class="checked"></div>
 										<div class="checked"></div>
-										<div class="checked"></div>
+										<div class="un-checked"></div>
 										<div class="un-checked"></div>
 										<div class="un-checked"></div>
 										<div class="un-checked"></div>
@@ -193,82 +204,127 @@
 	<section id="portfolio">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-5 col-md-offset-1 col-sm-12">
-				  <div class="prezento-holder">
-						<div class="prezento-device">
-							<img class="img-responsive" src="IMG/PSDtoBootstrapStill.png" alt="">
-						</div>
-						<div class="prezento-screen"></div>
-					</div>
+				<div class="col-md-5 col-md-offset-1 col-sm-12 device-wrapper">
+					<img class="img-responsive" src="IMG/imacPSDtoBootstrap.png" alt="">
+					<img class="img-responsive ipad" src="IMG/ipadPSDtoBootstrap.png" alt="">
+					<img class="img-responsive iphone" src="IMG/iphonePSDtoBootstrap.png" alt="">
 				</div>
-				<div class="showCase-wrapper col-md-5 col-sm-12">
+				<div class="portfolioText col-md-5 col-sm-12">
 					<h3>PSD to Bootstrap</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sapiente omnis optio porro ad deleniti architecto vero officia. Pariatur nesciunt exercitationem temporibus esse. Nulla nostrum perferendis officiis ad, voluptas soluta!</p>
 					
 					<ul class="skills">
 						<li>HTML5</li>
 						<li>CSS3</li>
+						<li>Responsive</li>
 						<li>Bootstrap</li>
 						<li>GitHub</li>
-					</ul>		
+					</ul>	
+					<a href="#" class="vistBtn" target="_blank">Visit <i class="fa fa-angle-double-right"></i></a>	
 				</div>
 			</div>  <!--row-->
 			
 			<div class="seperator"></div>
 			
 			<div class="row">
-				<div class="col-md-5 col-md-offset-1 col-sm-12">
-				  <div class="prezento-holder">
-						<div class="prezento-device">
-							<img class="img-responsive" src="IMG/MainPortfolioStill.png" alt="">
-						</div>
-						<div class="prezento-screen"></div>
-					</div>
+				<div class="col-md-5 col-md-offset-1 col-sm-12 device-wrapper">
+					<img class="img-responsive" src="IMG/imacLukeNguyen.png" alt="">
+					<img class="img-responsive ipad" src="IMG/ipadLukeNguyen.png" alt="">
+					<img class="img-responsive iphone" src="IMG/iphoneLukeNguyen.png" alt="">
 				</div>
-				<div class="showCase-wrapper col-md-5 col-sm-12">
+				<div class="portfolioText col-md-5 col-sm-12">
 					<h3>Portfolio</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sapiente omnis optio porro ad deleniti architecto vero officia. Pariatur nesciunt exercitationem temporibus esse. Nulla nostrum perferendis officiis ad, voluptas soluta!</p>
 					
 					<ul class="skills">
 						<li>HTML5</li>
 						<li>CSS3</li>
+						<li>Responsive</li>
 						<li>Bootstrap</li>
 						<li>JQuery</li>
 						<li>GitHub</li>
-					</ul>		
+					</ul>	
+					<a href="#" class="vistBtn" target="_blank">Visit <i class="fa fa-angle-double-right"></i></a>	
 				</div>
 			</div>  <!--row-->
 			
 			<div class="seperator"></div>
 			
 			<div class="row">
-				<div class="col-md-5 col-md-offset-1 col-sm-12">
-				  <div class="prezento-holder">
-						<div class="prezento-device">
-							<img class="img-responsive" src="IMG/GraphicShowcaseStill.png" alt="">
-						</div>
-						<div class="prezento-screen"></div>
-					</div>
+				<div class="col-md-5 col-md-offset-1 col-sm-12 device-wrapper">
+					<img class="img-responsive" src="IMG/imacGraphicWeb.png" alt="">
+					<img class="img-responsive ipad" src="IMG/ipadGraphicWeb.png" alt="">
+					<img class="img-responsive iphone" src="IMG/iphoneGraphicWeb.png" alt="">
 				</div>
-				<div class="showCase-wrapper col-md-5 col-sm-12">
+				<div class="portfolioText col-md-5 col-sm-12">
 					<h3>Graphic Design</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sapiente omnis optio porro ad deleniti architecto vero officia. Pariatur nesciunt exercitationem temporibus esse. Nulla nostrum perferendis officiis ad, voluptas soluta!</p>
 					
 					<ul class="skills">
 						<li>HTML5</li>
 						<li>CSS3</li>
+						<li>Responsive</li>
 						<li>Bootstrap</li>
 						<li>JQuery</li>
 						<li>GitHub</li>
-					</ul>		
+					</ul>
+					
+					<a href="https://luken1990.github.io/Graphic-Design-Portfolio/" class="vistBtn" target="_blank">Visit <i class="fa fa-angle-double-right"></i></a>	
 				</div>
 			</div>  <!--row-->
 		</div>  <!--container-->
 	</section>
 	
-	
-	
-	
+	</section>
+
+	<section id="contact">
+		<div class="container-fluid">
+			
+			<div class="header-wrapper">
+				<h2>Contact</h2>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-6 form-box">
+					<div class="form-wrapper">
+						<form action="#" method="#">
+							<div class="form-group">
+
+								<input id="name" type="text" class="form-control" placeholder="Name:">
+
+								<input id="tel" type="tel" class="form-control" placeholder="Tel:">
+
+								<input id="email" type="email" class="form-control" placeholder="Email:">
+
+								<textarea name="msg" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+								<button class="btn btn-primary" type="submit">Send message</button>
+							</div>  <!--form-group-->
+						</form>
+					</div>  <!--form-wrapper-->
+				</div>  <!--form-box-->
+			
+				<div class="col-sm-6 map-box">
+					<div class="map-wrapper">
+						<iframe
+							width="100%"
+							height="450"
+							frameborder="0" style="border:0"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2485.7220910077585!2d-0.11354188424300372!3d51.46325872175062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760465e022347b%3A0xcc933ed953ec681e!2sBrixton+Station+Rd%2C+London+SW9+7BQ!5e0!3m2!1sen!2suk!4v1483127172529" allowfullscreen>
+						</iframe>
+					</div>  <!--map-wrapper-->
+					<div class="contact-info">
+						<div class="social-links">
+							<a><i class="fa fa-facebook-official fa-2x" target="_blank" aria-hidden="true"></i></a>
+							<a><i class="fa fa-twitter-square fa-2x" target="_blank" aria-hidden="true"></i></a>
+							<a><i class="fa fa-instagram fa-2x" target="_blank" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>	
+			</div>  <!--row-->
+			
+		</div>  <!--container-fluid-->
+	</section>
+
 	<footer>
 		<small class="text-center">
 			<p>Copyright © 2016 Luke Nguyen</p>
@@ -276,11 +332,9 @@
 	</footer>
 
 	
-	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-	<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 
 	<script src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
-
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="JS_JQUERY/JS_particles.js"></script>
 	<script type="text/jscript" src="JS_JQUERY/JS_jquery.js"></script>

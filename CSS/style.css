@@ -8,7 +8,7 @@
 }
 
 html, body{
-	font-family: 'Lato', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 .flex{
@@ -50,13 +50,11 @@ p, a{
 
 h2{
 	font-size:2rem;
-	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
 }
 
 h3{
 	font-size:1.5rem;
-	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
 }
 
@@ -69,6 +67,10 @@ h3{
 	border-radius: 0;
 }
 
+.hidden{
+	display:none;
+}
+
 /*
 _____________________
 *NAVIGATION STYLE* 
@@ -76,7 +78,7 @@ _____________________
 */
 
 .navbar-default{
-	background: rgba(0,0,0,0.3);
+	background: transparent;
 	border-bottom: none;
 	padding-top: 1.25rem;
 
@@ -105,6 +107,14 @@ _____________________
 	background:#fff;
 }
 
+/*NAV MEDIA QUERIES*/
+
+@media (max-width:768px){
+	.navbar-default .navbar-nav{
+		text-align:center;
+	}
+}
+
 /*
 _____________________
 *MAIN STYLE* 
@@ -112,7 +122,8 @@ _____________________
 */
 #home{
 	height: 100vh;
-  background-image:url(https://static.pexels.com/photos/36487/above-adventure-aerial-air.jpg);
+	background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://static.pexels.com/photos/36487/above-adventure-aerial-air.jpg);
+  background-size:cover;
   background-size: cover;
   background-repeat: no-repeat;
 	background-position: center center;
@@ -123,32 +134,72 @@ _____________________
 	height:100vh;
 }
 
-.main-wrapper{
-	
-}
-
-h1{
-	color:#fff;
-	font-size: 4rem;
-	font-weight: 800;
-	letter-spacing: 0.2em;
-	text-transform: uppercase;
-	border: 0.125em solid #fff;
-	padding: 0.625em;
-	font-family: 'Roboto', sans-serif;
+.text-wrapper{
+	width:100%;
 	display: inline-block;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
-	-webkit-transform: translate(-50%,-50%);
-	-moz-transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 	transition: all 1s ease-in-out;
+	text-align: center;
+}
+
+h1{
+	color:#fff;
+	font-size: 5rem;
+	font-weight: 100;
+	letter-spacing: 0.03125em;
+	text-transform: uppercase;
+	margin-bottom: 1.25rem;
+}
+
+.text-wrapper p{
+	color:#fff;
+	font-size:1.5rem;
+	/*letter-spacing: 0.0625em;*/
+	line-height: 2rem;
 }
 
 #particles-js{
 	height:100vh;
 }
+
+.viewWork-btn{
+	position: absolute;
+	top:70%;
+	left:50%;
+	transform: translateX(-50%);
+	border: 0.0625rem solid #fff;
+	padding: 1.25rem;
+}
+
+.viewWork-btn:hover{
+	text-decoration: none;
+	background:#007EA7;
+}
+
+.viewWork-btn p{
+	margin: 0;
+	text-transform: uppercase;
+	color:#fff;
+}
+
+.pointer{
+	position: absolute;
+	top:85%;
+	left:50%;
+	transform: translateX(-50%);
+	color:#fff;
+}
+.animated{
+	animation-duration: 1.1s;
+}
+
+.fa-angle-double-down{
+	animation-iteration-count: infinite;
+}
+
 
 /*
 _____________________
@@ -183,6 +234,9 @@ _____________________
 	h1{
 		font-size:2rem;
 	}
+	.text-wrapper p{
+		font-size: 1rem;
+	}
 }
 
 /*
@@ -205,32 +259,12 @@ _____________________
 	margin: 0 auto;
 }
 
-/*.timeline-button{
-	width: 30px;
-	height: 50px;
-	border: 3px solid #999;
-	margin: 0 auto;
-	border-radius: 50px;
-	position: relative;
+.cvBtn-wrapper{
+	background:#999;
+	width:80px;
+	height:80px;
+	border-radius: 100%;
 }
-
-.btn-slider{
-	width: 15px;
-	height: 25px;
-	background: #999;
-	border-radius: 25px;
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	transition: all 0.3s ease-in-out;
-}
-
-.timeline-active{
-	top:60%;
-}*/
 
 
 .about-text h2{
@@ -311,7 +345,7 @@ _____________________
 }
 
 #portfolio .row{
-	padding: 2.5rem 0;
+	padding: 3.125rem 0;
 }
 
 #portfolio .row:first-child{
@@ -323,12 +357,12 @@ _____________________
 }
 
 
-.showCase-wrapper h3{
+.portfolioText h3{
 	margin: 1.25rem 0 2.5rem ;
 	color:#007EA7;
 }
 
-.showCase-wrapper p{
+.portfolioText p{
 	margin-bottom: 1.25rem;
 }
 
@@ -341,7 +375,7 @@ _____________________
 	display: inline-block;
 	color:#fff;
 	padding: 0.3125rem 0.625rem;
-	margin-right: 0.3125rem;
+	margin: 0 0.3125rem 0.3125rem 0;
 	border-radius: 0.3125rem;
 }
 
@@ -353,6 +387,198 @@ _____________________
   background-image: -ms-linear-gradient(left, #f2f2f2, #fff, #f2f2f2);
   background-image: -o-linear-gradient(left, #f2f2f2, #fff, #f2f2f2); 
 }
+
+
+
+.ipad{
+	position: absolute;
+	height:80%;
+	top:100%;
+	left:-100%;
+	transform: translateY(-100%);
+	transition: all 1.2s ease-out;
+}
+
+.iphone{
+	position: absolute;
+	height:50%;
+	top:100%;
+	left:-100%;
+	transform: translateY(-100%);
+	transition: all 1.2s ease-out;
+	transition-delay: 0.6s;
+}
+
+.Slide{
+	left:0%;
+}
+
+.vistBtn{
+	border:0.0625em solid #333;
+	color:#333;
+	float:right;
+	margin-top:3rem;
+	padding:0.625rem 3rem;
+	animation-iteration-count: infinite;
+}
+
+.vistBtn:hover{
+	text-decoration: none;
+}
+
+.fa-angle-double-right{
+	padding-left:0.625rem;
+}
+
+
+/*
+_____________________
+* PORTFOLIO QUERIES * 
+_____________________
+*/
+
+@media (max-width:1199px){
+	.vistBtn{
+		margin-top:2rem;
+	}
+	.portfolioText h3{
+		margin: 1.25rem 0;
+	}
+}
+
+@media (max-width:989px){
+	.portfolioText{
+		display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	}
+	.portfolioText h3{
+		margin-top:2.5rem;
+	}
+}
+
+
+
+/*
+_____________________
+* CONTACT SECTION * 
+_____________________
+*/
+
+#contact{
+  background-image:url(https://images.unsplash.com/photo-1430165558479-de3cf8cf1478?dpr=2&amp;auto=format&amp;fit=crop&amp;w=1199&amp;h=799&amp;q=80&amp;cs=tinysrgb&amp;crop=);
+  background-size: cover;
+  background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+#contact .container-fluid{
+	min-height:100vh;
+}
+
+#contact .container-fluid .row{
+	background:#fff;
+	min-height:50vh;
+}
+
+.map-wrapper{
+	width:100%;
+}
+
+.map-wrapper iframe{
+	width: 100%;
+	display: block;
+	pointer-events: none;
+	position: relative;
+}
+.map-wrapper iframe.clicked{
+	pointer-events: auto;
+}
+
+.form-wrapper{
+	background-color: #fff;
+	padding: 2rem 0;
+	color:#000;
+}
+
+.form-group input{
+	margin-bottom: 1.25rem;
+}
+
+/*.form-box>div{
+	position: relative;
+	top:-6.25rem;
+}*/
+
+#contact .container-fluid .row h2{
+	background:rgba(0,0,0,0.3);
+	display: inline-block;
+	font-size:2rem;
+	letter-spacing: 0.2em;
+	font-weight:bold;
+	color:#fff;
+	border: 0.3125em solid #fff;
+	padding: 0.625em 1.25em;
+	margin: 10rem 0 5rem;
+}
+
+#contact .container-fluid .row{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	padding:1.25rem 0;
+}
+
+.form-control{
+	border-radius:0;
+}
+
+.btn-primary{
+	font-size: 1rem;
+	margin: 2rem auto 0;
+	background: #007EA7;
+	display: block;
+	padding: 0.625em 2.5em;
+	border-radius:0;
+}
+
+.btn-primary:hover{
+	background: #003459;
+}
+
+.social-links{
+	margin: 1.25rem 0;
+	display: inline-block;
+	float: right;
+}
+
+.social-links a{
+	margin-right: 0.625rem;
+}
+
+/*
+_____________________
+* CONTACT SECTION MEDIA QUERIES* 
+_____________________
+*/
+
+@media (max-width:767px){
+	#contact .container-fluid .row {
+    flex-direction: column-reverse;
+}
+	.map-box{
+		width:100%;
+		padding-top: 0.9375rem;
+		/*border-bottom: 0.0625em solid #007EA7;*/
+	}
+	.form-box{
+		width:100%;
+	}
+}
+
 /*
 _____________________
 * FOOTER SECTION * 
