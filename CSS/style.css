@@ -172,16 +172,12 @@ h1{
 	transform: translateX(-50%);
 	border: 0.0625rem solid #fff;
 	padding: 1.25rem;
+	text-transform: capitalize;
+	color:#fff;
 }
 
-.viewWork-btn:hover{
+a.viewWork-btn:hover, a.viewWork-btn:visited, a.viewWork-btn:active, a.viewWork-btn:link{
 	text-decoration: none;
-	background:#007EA7;
-}
-
-.viewWork-btn p{
-	margin: 0;
-	text-transform: uppercase;
 	color:#fff;
 }
 
@@ -422,8 +418,9 @@ _____________________
 	animation-iteration-count: infinite;
 }
 
-.vistBtn:hover{
+.vistBtn:hover, .vistBtn:focus{
 	text-decoration: none;
+	color:#007EA7;
 }
 
 .fa-angle-double-right{
