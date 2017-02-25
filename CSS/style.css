@@ -50,11 +50,13 @@ p, a{
 
 h2{
 	font-size:2rem;
+	font-weight:200;
 	text-transform: uppercase;
 }
 
 h3{
 	font-size:1.5rem;
+	font-weight:200;
 	text-transform: uppercase;
 }
 
@@ -464,7 +466,9 @@ _____________________
 */
 
 #contact{
-  background-image:url(https://images.unsplash.com/photo-1430165558479-de3cf8cf1478?dpr=2&amp;auto=format&amp;fit=crop&amp;w=1199&amp;h=799&amp;q=80&amp;cs=tinysrgb&amp;crop=);
+	background:
+		linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+		url("https://images.unsplash.com/photo-1430165558479-de3cf8cf1478?dpr=2&amp;auto=format&amp;fit=crop&amp;w=1199&amp;h=799&amp;q=80&amp;cs=tinysrgb&amp;crop=");
   background-size: cover;
   background-repeat: no-repeat;
 	background-position: center center;
@@ -473,88 +477,81 @@ _____________________
 
 #contact .container-fluid{
 	min-height:100vh;
+	position: relative;
 }
 
-#contact .container-fluid .row{
-	background:#fff;
-	min-height:50vh;
+#contact-modal{
+	display: inline-block;
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+	border-radius:0.3125rem;
 }
 
-.map-wrapper{
+#contact-modal h2{
 	width:100%;
-}
-
-.map-wrapper iframe{
-	width: 100%;
-	display: block;
-	pointer-events: none;
+	border-radius:0.3125rem 0.3125rem 0 0;
+	overflow: hidden;
 	position: relative;
-}
-.map-wrapper iframe.clicked{
-	pointer-events: auto;
-}
-
-.form-wrapper{
-	background-color: #fff;
-	padding: 2rem 0;
-	color:#000;
-}
-
-.form-group input{
-	margin-bottom: 1.25rem;
-}
-
-/*.form-box>div{
-	position: relative;
-	top:-6.25rem;
-}*/
-
-#contact .container-fluid .row h2{
-	background:rgba(0,0,0,0.3);
 	display: inline-block;
-	font-size:2rem;
-	letter-spacing: 0.2em;
-	font-weight:bold;
+	text-transform: capitalize;
+	padding:2.5rem;
+	margin: 0;
+	background:#007EA7;
 	color:#fff;
-	border: 0.3125em solid #fff;
-	padding: 0.625em 1.25em;
-	margin: 10rem 0 5rem;
+	text-align: center;
 }
 
-#contact .container-fluid .row{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
-	padding:1.25rem 0;
+#contact-Header{
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%, -50%);
+	transition: all 0.5s ease-in-out;
+	visibility: visible;
+	opacity: 1;
 }
 
-.form-control{
-	border-radius:0;
+#getInTouch{
+	position: absolute;
+	left:50%;
+	top:125%;
+	transform: translate(-50%, -50%);
+	transition: all 0.5s ease-in-out;
+	visibility: hidden;
+	opacity: 0;
 }
 
-.btn-primary{
-	font-size: 1rem;
-	margin: 2rem auto 0;
-	background: #007EA7;
-	display: block;
-	padding: 0.625em 2.5em;
-	border-radius:0;
+#contact-modal:hover #getInTouch{
+	top:50%;
+	visibility: visible;
+	opacity: 1;
 }
 
-.btn-primary:hover{
-	background: #003459;
+#contact-modal:hover #contact-Header{
+	top:-25%;
+	visibility: hidden;
+	opacity: 0;
 }
 
-.social-links{
-	margin: 1.25rem 0;
-	display: inline-block;
-	float: right;
+.contact-icons{
+	padding:3rem 0rem;
 }
 
-.social-links a{
-	margin-right: 0.625rem;
+.contact-icons i{
+	margin: 0 1.25rem;
+	color:#999;
+	transition: color 0.3s ease-in-out;
 }
+
+.contact-icons i:hover{
+	color:#007EA7;
+}
+
+
 
 /*
 _____________________
@@ -562,19 +559,51 @@ _____________________
 _____________________
 */
 
-@media (max-width:767px){
-	#contact .container-fluid .row {
-    flex-direction: column-reverse;
-}
-	.map-box{
+@media (max-width:999px){
+/*
+	#contact-modal{
 		width:100%;
-		padding-top: 0.9375rem;
-		/*border-bottom: 0.0625em solid #007EA7;*/
+		text-align:center;
+		border-radius: 0;
 	}
-	.form-box{
+	#contact-modal h2{
+		border-radius: 0;
+	}
+*/
+}
+
+@media (max-width:520px){
+/*
+	#contact-modal{
+		height:100%;
+		box-shadow: none;
+	}
+	#contact-modal h2{
+		padding: 2rem;
+	}
+	.contact-icons{
+		padding: 0;
+	}
+	.contact-icons a{
+		display: block;
+		margin:1.25rem 0;
+	}
+	.contact-icons a i{
+		font-size: 3.5rem;
+	}
+*/
+}
+
+/*
+@media (max-width:769px){
+	#contact-modal{
 		width:100%;
+		text-align:center;
 	}
 }
+*/
+
+
 
 /*
 _____________________
@@ -583,7 +612,7 @@ _____________________
 */
 
 footer{
-	background: #007EA7;
+	background: #fff;
 	/*z-index: 999;*/
 }
 
@@ -591,7 +620,7 @@ footer{
 small p{
 	min-height: 4rem;
 	padding: 2rem 1.25rem;
-	color:#fff;
+	color:#007EA7;
 	margin-bottom: 0;
 }
 
